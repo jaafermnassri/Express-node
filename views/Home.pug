@@ -1,0 +1,54 @@
+//- doctype html 
+
+//- html  
+//-     head 
+//-         title Express Checkpoint 
+//-         linklink(rel='stylesheet', href='/stylesheets/boostrap.min.css', type='text/css')
+//-     body 
+
+        
+    h1= time
+doctype html
+
+head
+  link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous")  
+  title Pug
+body   
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarTogglerDemo01' aria-controls='navbarTogglerDemo01' aria-expanded='false' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarTogglerDemo01.collapse.navbar-collapse
+    a.navbar-brand(href='http://localhost:4000/') Home
+    ul.navbar-nav.mr-auto.mt-2.mt-lg-0
+      li.nav-item.active
+        a.nav-link(href='http://localhost:4000/OurServices')
+          | Services 
+          span.sr-only 
+      li.nav-item
+        a.nav-link(href='http://localhost:4000/ContactUs') Contact
+      
+    form.form-inline.my-2.my-lg-0
+.formulaire(style="width:65%;margin:0 auto")
+    .input-group.mb-3
+    span#basic-addon1.input-group-text @
+    input.form-control(type='text' placeholder='Username' aria-label='Username' aria-describedby='basic-addon1')
+    .input-group.mb-3
+    input.form-control(type='text' placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby='basic-addon2')
+    span#basic-addon2.input-group-text @example.com
+    label.form-label(for='basic-url') Your vanity URL
+    .input-group.mb-3
+    span#basic-addon3.input-group-text https://example.com/users/
+    input#basic-url.form-control(type='text' aria-describedby='basic-addon3')
+    .input-group.mb-3
+    span.input-group-text $
+    input.form-control(type='text' aria-label='Amount (to the nearest dollar)')
+    span.input-group-text .00
+    .input-group.mb-3
+    input.form-control(type='text' placeholder='Username' aria-label='Username')
+    span.input-group-text @
+    input.form-control(type='text' placeholder='Server' aria-label='Server')
+    .input-group
+    span.input-group-text With textarea
+    textarea.form-control(aria-label='With textarea')
+    button.btn.btn-primary.btn-lg(type='button')(style="width:65%;margin-left: 210px;margin-top:40px") Submit
+

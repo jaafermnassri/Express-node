@@ -1,0 +1,9 @@
+body{
+    margin: 0 auto;
+    text-align: center;
+    background-color: green;
+}
+ul {
+ display: flex;
+ background-color: burlywood;
+}
